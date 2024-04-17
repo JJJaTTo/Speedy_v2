@@ -1,0 +1,12 @@
+{
+"name": "Speedy_v2",
+"short_name": "Speedy",
+"theme_color":"#8936FF",
+"background_color":"#2EC6FE",
+"orientation":"any",
+"display":"standalone",
+"dir":"auto",
+"lang":"en-US",
+"description":"A measurement and price calculator tool for aluminum artisans and engineers",
+"start_url": "./"
+}
