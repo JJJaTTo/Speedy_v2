@@ -118,7 +118,7 @@
   const rollerCost = __("#roller-cost");
   rollerCost.innerText =  'N'+rollerPrice;
   const rubberCost = __("#rubber-cost");
-  rubberCost.innerText =  'N'+rubberPrice+"--per_roll";
+  rubberCost.innerText =  'N'+rubberPrice+" (per_roll)";
 
   const keyCost = __("#key-cost");
   keyCost.innerText =  'N'+keyPrice;
