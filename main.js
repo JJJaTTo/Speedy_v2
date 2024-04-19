@@ -204,7 +204,7 @@ seePriceBtn.addEventListener("click", () => {
   const showPrice = document.querySelectorAll('.show');
   showPrice.forEach(span =>{
     span.style.display = 'block'
-  })
+  });
 
 });
 
