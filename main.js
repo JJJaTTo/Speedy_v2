@@ -8,7 +8,7 @@
 
       // VAR DECLARATIONS
       const fullLength = 5850; // standard aluminium profile length in milimeters
-      const glassSheet = 6540; // area of a sheet of glass in milimeters sq
+      const glassSheet = 2289800; // area of a sheet of glass in milimeters sq
       let xWidth, yHeight;
       let rubberLength;
       let rubberLengthFixed;
@@ -41,7 +41,7 @@
         ilCal = yHeight - 40 /// constant values!!!!! do not alter!!!!
         glassWidth = tbCal + 18 /// constant values!!!!! do not alter!!!!
         glassHeight = yHeight - 120 /// constant values!!!!! do not alter!!!!
-        glassSize = (glassHeight + glassWidth) *2 ;// area of a glass
+        glassSize = (glassHeight * glassWidth) *2 ;// area of a glass
         rubberLength = Math.ceil(glassHeight+glassWidth)*4 /1000
         rubberLengthFixed = rubberLength.toFixed()
        brushLength = Math.ceil((tbCal*4) /1000)
@@ -56,12 +56,12 @@
           Glass: `Glass: ${glassWidth}mm  X ${glassHeight}mm (2pcs)\n`,
           Estimated_accesories_per_window: 
           {
-          Roller:`Roller:${roller}(set)\n`,
-          Key:`Key:${key}(set)\n`,
+          Roller:`Roller: ${roller}(set)\n`,
+          Key:`Key: ${key}(set)\n`,
           Rubber:`Rubber: ${rubberLengthFixed}M\n`,
-          Brush:`Brush:${brushLengthFixed}M`,
-          Coupling_Screw:`Coupling Screws:${couplingScrew}(pcs)`,
-          Jam_Screw:`Jam screws:${jamScrew}(pcs)`
+          Brush:`Brush: ${brushLengthFixed}M`,
+          Coupling_Screw:`Coupling Screws: ${couplingScrew}(pcs)`,
+          Jam_Screw:`Jam screws: ${jamScrew}(pcs)`
         }
         };
 
