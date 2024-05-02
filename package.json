@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "cli": "^1.0.1",
-    "generate-service-worker": "^2.0.5",
-    "wizard": "^2.0.0",
-    "workbox": "^0.0.0"
-  }
-}

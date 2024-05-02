@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 360px) {
   body {
     width: 100vw;
     margin: 5px;
@@ -31,13 +31,16 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+  #price-UI {
+    right: -10px;
+  }
   input {
     width: 100%;
   }
 }
 header {
   width: 100vw;
-  height: 80px;
+  height: 75px;
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
@@ -48,7 +51,6 @@ header {
   margin-bottom: 2em;
 }
 header .app-name {
-  max-width: 150px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -57,12 +59,14 @@ header .app-name {
   border-radius: 7px;
   background-color: rgb(44, 44, 44);
   color: white;
-  max-width: 120px;
+  border: 1px solid red;
+  max-width: 100px;
   padding: 8px;
-  margin: 2em;
+  margin: 10px;
 }
 .secBtn:active {
   background-color: gray;
+  scale: 0.5;
 }
 
 p {
@@ -95,13 +99,17 @@ input {
 }
 .priBtn {
   height: 40px;
-  width: 120px;
-  margin: 2em;
+  width: 100px;
+  margin: 3em 0px;
   font-size: 14px;
   font-weight: 700;
+  border: 2px solid greenyellow;
+  border-radius: 7px;
+  background-color: rgb(44, 44, 44);
 }
 .priBtn:active {
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(182, 180, 180);
+  scale: 0.5;
 }
 div button {
   width: 40px;
@@ -114,7 +122,8 @@ div button {
   background-color: rgb(15, 15, 15);
   opacity: 98%;
   width: 100vw;
-  left: -19px;
+  /* left: -18px; */
+  right: 0;
   flex-direction: column;
   z-index: 100;
   border-radius: 2px groove gray;

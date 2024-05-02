@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- JT|DEv_solutions -->
+    <!-- JLABS-Tech_solutions -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JT|Speedy</title>
+    <meta name="theme-color" content="#808080" />
+    <title>Speedy_v2</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./sw.js");
-        });
-      }
-    </script>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/JtLogo_192.png" />
   </head>
   <body>
     <header>
@@ -273,5 +268,21 @@
     </footer>
 
     <script src="main.js"></script>
+
+    <!-- serviceWorker script -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        // window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then((registration) => {
+            console.log("Service Worker registered with scope:", registration);
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+        // });
+      }
+    </script>
   </body>
 </html>
