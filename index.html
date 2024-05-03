@@ -264,7 +264,7 @@
       </main>
     </div>
     <footer>
-      <h5>© J_Labs 2024. || +2348127967257</h5>
+      <h5>© J_LABS 2024. || +2348127967257</h5>
     </footer>
 
     <script src="main.js"></script>
@@ -272,16 +272,19 @@
     <!-- serviceWorker script -->
     <script>
       if ("serviceWorker" in navigator) {
-        // window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then((registration) => {
-            console.log("Service Worker registered with scope:", registration);
-          })
-          .catch((error) => {
-            console.error("Service Worker registration failed:", error);
-          });
-        // });
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./sw.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered with scope:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
+            });
+        });
       }
     </script>
   </body>
